@@ -9,3 +9,27 @@ var firstReverse = function(singleString){
 console.log(firstReverse('string'));
 
 
+var swapCase = function(string){
+    var caseString = string.split('');
+    var newWord = '';
+    for (var i=0; i<caseString.length; i++){
+        if(caseString[i] === caseString[i].toLowerCase()){
+            caseString[i] = caseString[i].toUpperCase();
+        }else {
+            caseString[i] = caseString[i].toLowerCase();
+        }
+        
+    newWord += caseString[i];
+        
+    }
+    console.log(newWord);
+    return newWord;
+}
+ 
+var text = 'Hello World'
+swapCase(text);
+
+//var letterCount = function(){
+//    
+//}
+
